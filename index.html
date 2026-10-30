@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namma Space - 3D Room Viewer</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: sans-serif; }
+    #info {
+      position: absolute; top: 20px; left: 20px; color: white;
+      background: rgba(0,0,0,0.6); padding: 10px 16px; border-radius: 8px;
+      pointer-events: none; z-index: 10;
+    }
+    #blocker {
+      position: absolute; inset: 0; background: rgba(0,0,0,0.5);
+      display: flex; justify-content: center; align-items: center;
+      color: white; font-size: 20px; cursor: pointer; z-index: 20;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">Click to enter • WASD to move • Mouse to look</div>
+  <div id="blocker">Click to Explore</div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
