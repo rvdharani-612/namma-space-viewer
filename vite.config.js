@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
-  base: './',
+  base: '/namma-space-viewer/', 
   build: { outDir: 'docs' }
 });
