@@ -25,7 +25,7 @@ scene.add(dirLight);
 // --- 3. Load 3D Model (Member 1 exports GLB and places it in public/models/room.glb) ---
 const loader = new GLTFLoader();
 loader.load(
-  '/models/room.glb', // Please ensure the file path is correct
+  './models/room.glb', 
   (gltf) => {
     const model = gltf.scene;
     model.traverse((node) => {
